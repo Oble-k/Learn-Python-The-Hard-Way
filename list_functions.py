@@ -55,3 +55,22 @@ print(fish.index('herring'))  #OP==6
 #It is possible to reverse the order of the list using list.reverse()
 fish.reverse()
 print(fish) #OP==['ide', 'herring', 'goby', 'flounder', 'eel', 'cod', 'barracuda', 'anchovy']
+
+#What if we wanted to count the number of appearances that an item in our list has?
+#enter list.count(x)
+#x---> the item that we want to count
+print(fish.count('goby')) #OP==1 //There is only 1 goby in the list. Let's create another list with another set of items, this time numerical
+
+fish_ages=[1,2,4,3,2,1,1,2] #Just a list with fishes' ages
+print(fish_ages.count(1))#OP==1//There aer 3 fishes aged 1
+
+#We can also sort the items on a list.
+#Enter list.sort()
+fish_ages.sort() #This will sort the list from min to max
+print(fish_ages) #OP==[1, 1, 1, 2, 2, 2, 3, 4]
+
+#It is also possible to remove every value in a list.
+#Enter list.clear()
+fish.clear() #This will clear the list of all the items
+print(fish)#OP==[]
+
