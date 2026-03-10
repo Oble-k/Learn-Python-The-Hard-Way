@@ -1,4 +1,4 @@
-types_of_people = 10
+types_of_people = 100
 x = f"There are {types_of_people} types of people." #Creates a string variable, which will change depending on types_of_people
 # In the previous line there is 1 string inside another string
 binary = "binary" #string variable, it is the same as its name
