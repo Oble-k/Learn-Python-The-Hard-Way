@@ -31,7 +31,7 @@ target.write(lines) #With this and the previous line we managed to write lines o
 # target.write(line3)
 # target.write("\n")
 
-#Study drill 2, in the next 3 lines of code
+#Study drill 2, in the next 3 lines of code.
 print("Now we will read the file")
 
 target = open(filename, 'r') #Remember, if we want to read a file, its important first to change it to mode r (Read)

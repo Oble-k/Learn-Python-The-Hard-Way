@@ -23,7 +23,7 @@ txt_again = open(file_again)
 print(txt_again.read())
 
 
-txt.close() #You should always close your files
+txt.close() #You should always close your files.
 txt_again.close()
 #No pude hacerlo funcionar en la uni, probar en casa
 # En la uni no puedo modificar el PATH (enviroment variables) por no ser admin
