@@ -1,0 +1,7 @@
+Hello, this is my text file!
+this is line number 2
+and this is line #3
+reading from text files is easy!
+
+
+kimo kawa

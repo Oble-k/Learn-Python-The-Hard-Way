@@ -1,3 +1,5 @@
-This is a test.
-this should be in line 5
-this line 6
+This is line 1
+This is line 2
+This is line 3
+EXTRA line 4
+EXTRA line 5
