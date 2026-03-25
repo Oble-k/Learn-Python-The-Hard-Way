@@ -5,7 +5,7 @@
 # Reasoning being that we may work with other files later
 
 #The next 2 lines, use argv to get a Filename
-from sys import argv
+from sys import argv # sys is a package, and the line says to get ther argv feature from that package
 script, filename = argv
 #in the next line we have a new command open()
 #The open function returns a file object that can be used to read, write and modify de file
@@ -22,5 +22,8 @@ txt_again = open(file_again)
 
 print(txt_again.read())
 
+
+txt.close() #You should always close your files.
+txt_again.close()
 #No pude hacerlo funcionar en la uni, probar en casa
 # En la uni no puedo modificar el PATH (enviroment variables) por no ser admin

@@ -1,0 +1,7 @@
+#
+Comando para runear scripts mediante la terminal
+py // Pc sobremesa
+python3 // Laptop
+
+echo: Similar a print,
+cat:  lee el contenido de un archivo txt
