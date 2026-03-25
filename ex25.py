@@ -1,5 +1,6 @@
+# Even more practice
 def break_words(stuff):
-    """This funnction will break up word for us."""
+    """This funnction will break up word for us.""" #The words between the triple-double quotes is documentation comment, using the help() command it is possible to read such comment.
     words = stuff.split(' ')
     return words
 
@@ -9,12 +10,12 @@ def sort_words(words):
 
 def print_first_word(words):
     """Print the first word after popping it off."""
-    word = words.pop(0)
+    word = words.pop(0) #The pop removes an element from a list. In this case it removes the first element (0)
     print(word)
 
 def print_last_word(words):
     """Prints the last word after popping it off."""
-    word = words.pop(-1)
+    word = words.pop(-1)#Removes the las element of a list (-1)
     print(word)
 
 def sort_sentence(sentence):
