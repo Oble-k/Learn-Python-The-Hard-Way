@@ -5,6 +5,23 @@ def dead(cause):
     print(cause, "\nWill you try again?")
     exit(0)
 
+def tower():
+    print("You walk northwards. As you approach the tower, a gate begins to take form.")
+    print("You wait around the portculis for a a while. As you begin to wonder if you should leave, you hear a metalic clank")
+    print("The gate begins to rise.")
+    print("A corridor appears before you, an ominous noise can be heard.")
+    print("\t1.-Enter the tower.")
+    print("\t2.-Go back.")
+
+    choice = input("> ")
+    if choice == "1":
+        print("You enter the corridor until...")
+        exit(0)
+    elif choice == "2":
+        dead("You turn back, and you start making your way to the town. However, the path seems changed.\nAn impossibly long path which grows by the second.\nYou won't make it back.\nStarvation hits you, and you fall to the ground.")
+    else
+        dead("Your mind becomes a mush, and thus your body is unable to answer to whats slithering from the gate.")
+
 def village():
     print("You go out the door.\nThe sun shines ever brightest.\nFar over the northern plains, an eerie looking tower looms over the realm")
     print("In the street there is a forge, an alchemist shop, and the wizards quarters")
@@ -17,7 +34,7 @@ def village():
     choice =input("> ")
 
     if choice == "1":
-        exit(0)
+        tower()
     elif choice == "2":
         exit(0)
     elif choice == "3":
@@ -27,7 +44,7 @@ def village():
     else:
         dead("Your incapability to decide makes your anxiety to rise, leading to a heart attack.")
 
-
+pain = 60
 
 def start():
     print("The sun rises upon the village.\nYou can hear the crowings of roosters.\nIt's time to go on an adventure!\n\nYou should go out!")
