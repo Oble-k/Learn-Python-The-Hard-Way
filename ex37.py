@@ -42,5 +42,82 @@ class Snake:
     pass
 snake = Snake()
 print(Snake())
-# print(f"This snake is known as a {snake.name}")
-# print(f"Snake's length is {snake.length}")
+print(snake.name)
+print(snake.length)
+print(snake.weight)
+
+# CONTINUE
+print("-----CONTINUE-----")
+# The continue keyword is used to end the current iteration in a for loop,
+# and continues to the next.
+total = 0
+
+for number in range(-10, 10):
+    if number < 0:
+        print("The number is {}. It is negative. It will not be added to the total.".format(number))
+        continue #This makes it so that it will only add the numbers which are positive
+    total += number
+print(total)
+
+# DEL
+# del, deletes an item from a list
+print("-----DEL-----")
+n_list = [1, 2, 3, 4, 5]
+print(n_list)
+del n_list[2]
+print(n_list)
+
+# TRY
+print("-----TRY-----")
+# the try blocks lets you test a block of code for errors
+
+x = 7
+try:
+    print(x)
+except:
+    print("An exception occurred")
+
+# EXCEPT
+print("-----EXCEPT-----")
+# the except block lets you handle the error
+
+try:
+    print(y)
+except:
+    print("An exception occurred")
+
+# ELSE
+print("-----ELSE-----")
+# The else block lets you execute code when there is no error
+
+try:
+  print("Hello")
+except:
+  print("Something went wrong")
+else:
+  print("Nothing went wrong")
+
+# FINALLY
+print("-----FINALLY-----")
+# The finally block lets you execute code, regardless of the try and except blocks
+print("\tThis one goes right:")
+try:
+  print(x)
+except:
+  print("Something went wrong")
+finally:
+  print("The 'try except' is finished")
+print("\tThis one goes wrong:")
+try:
+  print(y)
+except:
+  print("Something went wrong")
+finally:
+  print("The 'try except' is finished")
+
+# RAISE
+print("-----RAISE-----")
+# raise is the way in which it is possible to throw an exception if a condition occurs.
+# x = -1
+# if x < 0:
+#     raise Exception("No numbers below zero!")
