@@ -19,7 +19,7 @@ def tower():
         exit(0)
     elif choice == "2":
         dead("You turn back, and you start making your way to the town. However, the path seems changed.\nAn impossibly long path which grows by the second.\nYou won't make it back.\nStarvation hits you, and you fall to the ground.")
-    else
+    else:
         dead("Your mind becomes a mush, and thus your body is unable to answer to whats slithering from the gate.")
 
 def village():
