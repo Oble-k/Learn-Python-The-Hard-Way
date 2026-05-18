@@ -11,7 +11,6 @@ class Scene(object):
         exit(1)
         pass
 
-
 class Engine(object):
 
     def __init__(self, scene_map):
@@ -22,7 +21,12 @@ class Engine(object):
         last_scene = self.scene_map.next_scene('finished')
 
         while current_scene != last_scene:
+            # Esta linea lanza una escena. Al acabar esa escena manda un return con un string
+            # El return indica que escena debería de ser la siguiente. Se guarda en "next_scene_name"
             next_scene_name = current_scene.enter()
+            # Actualiza current_scene. El self.scene_map lanza una instancia de la clase map.
+            # Entra en el diccionario y busca el string "next_scene_name".
+            # Esto permite relacionar el string con la escena en si
             current_scene = self.scene_map.next_scene(next_scene_name)
 
         current_scene.enter()
@@ -77,7 +81,8 @@ class LaserWeaponArmory(Scene):
         guess = input("[keypad]> ")
         guesses = 1
 
-        print("Code: ", code)
+        # guess = code #Activa para bypassear el adivinar el num
+
         while guess != code and guesses < 10:
             print("BZZZZZZ!")
             guesses += 1
