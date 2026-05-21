@@ -8,26 +8,24 @@ class Other(object):
     def altered(self):
         print("OTHER altered()")
 
-class Child(Parent):
+class Child(object):
 
     def __init__(self):
         self.other = Other()
+
+    def implicit(self):
+        self.other.implicit()
+
     def override(self):
         print("CHILD override()")
 
     def altered(self):
         print("CHILD, BEFORE PARENT altered()")
-        super(Child, self).altered()
+        self.other.altered()
         print("CHILD, AFTER PARENT altered()")
 
-dad = Parent()
 son = Child()
 
-dad.implicit()
 son.implicit()
-print("_"*20)
-dad.override()
 son.override()
-print("_"*20)
-dad.altered()
 son.altered()
