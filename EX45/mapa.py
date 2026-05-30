@@ -1,4 +1,10 @@
 # Define las escenas que van a ir sucediendo
+from start import Start
+from baraja import Baraja
+from repartir_inicial import RepartirInicial
+from game_loop import GameLoop
+from recuento_puntos import RecuentoPuntos
+from ganador import Ganador
 
 class Mapa(object):
 
