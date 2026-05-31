@@ -1,6 +1,9 @@
 # Borrar scenes
 from start import *
 from baraja import Baraja
+from muestra import Muestra
+
+from repartir_inicial import RepartirInicial
 scenes = {
     'start': Start(),
     'baraja': Baraja(),
@@ -9,6 +12,15 @@ scenes = {
     # 'recuento_puntos': RecuentoPuntos(),
     # 'ganador': Ganador()
 }
-Start()
-deck_list = Baraja()
-print(deck_list) #Ya es usable el vector de la baraja
+
+Start() #Se pregunta al usuario si quiere jugar a brisca.
+
+mazo_robo = Baraja() #Se crea el mazo del que se robará, y se ordena de manera aleatoria
+
+# print(deck_list) #Ya es usable el vector de la baraja
+
+instancia = Muestra(mazo_robo.deck) #Se crea una instancia llamada instancia de la clase
+
+la_muestra = instancia.extraer_muestra()
+
+print(la_muestra)
