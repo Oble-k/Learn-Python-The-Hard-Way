@@ -1,4 +1,4 @@
-# Borrar scenes
+# Borrar scenes aa
 from start import *
 from baraja import Baraja
 from muestra import Muestra

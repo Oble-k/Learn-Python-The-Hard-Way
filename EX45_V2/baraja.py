@@ -1,4 +1,4 @@
-# Genera la baraja, y hace el shuffle original.
+# Genera la baraja, y hace el shuffle original.a
 import random
 class Baraja(object):
     def __init__(self):

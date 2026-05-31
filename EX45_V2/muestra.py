@@ -1,4 +1,4 @@
-# La primera carta se convierte en la muestra
+# La primera carta se convierte en la muestraa
 class Muestra(object):
     def __init__(self, deck_whole):
         self.deck = deck_whole
